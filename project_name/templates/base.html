@@ -1,3 +1,3 @@
-{% extends "site_base.html" %}
-{% block head_title %}Home{% endblock %}
-{% block body %}Add homepage body here{% endblock %}
+{% templatetag openblock %} extends "site_base.html" {% templatetag closeblock %} 
+{% templatetag openblock %} block head_title {% templatetag closeblock %}Home{% templatetag openblock %} endblock {% templatetag closeblock %}
+{% templatetag openblock %} block body {% templatetag closeblock %}Add homepage body here{% templatetag openblock %} endblock {% templatetag closeblock %}

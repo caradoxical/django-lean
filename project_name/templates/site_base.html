@@ -1,7 +1,7 @@
-{% extends "theme_bootstrap/base.html" %}
-{% block navbar_class %}navbar-inverse navbar-fixed-top{% endblock %}
-{% block head_title %}Hello world{% endblock %}
-{% block nav %}
+{% templatetag openblock %}  extends "theme_bootstrap/base.html" {% templatetag closeblock %} 
+{% templatetag openblock %}  block navbar_class {% templatetag closeblock %} navbar-inverse navbar-fixed-top{% templatetag openblock %}  endblock {% templatetag closeblock %} 
+{% templatetag openblock %}  block head_title {% templatetag closeblock %} Hello world{% templatetag openblock %}  endblock {% templatetag closeblock %} 
+{% templatetag openblock %}  block nav {% templatetag closeblock %} 
 <ul class="nav">
     <li id="tab_first">
         <a href="#">First Link</a>
@@ -20,5 +20,5 @@
         </ul>
     </li>
 </ul>
-{% endblock %}
-{% block body %}body{% endblock %}
+{% templatetag openblock %}  endblock {% templatetag closeblock %} 
+{% templatetag openblock %}  block body {% templatetag closeblock %} body{% templatetag openblock %}  endblock {% templatetag closeblock %} 
