@@ -15,6 +15,7 @@ To install Django in the new virtual environment, run the following command::
     $ django-admin.py startproject --template=https://github.com/chriscabral/django-lean/archive/master.zip --extension=py,rst,html helloworldproject
     $ librarian-chef install
     $ vagrant up
+    $ vagrant ssh
     $ cd /vagrant
     $ pip install -r requirements/local.txt
 
