@@ -1,0 +1,24 @@
+{% extends "theme_bootstrap/base.html" %}
+{% block navbar_class %}navbar-inverse navbar-fixed-top{% endblock %}
+{% block head_title %}Hello world{% endblock %}
+{% block nav %}
+<ul class="nav">
+    <li id="tab_first">
+        <a href="#">First Link</a>
+    </li>
+    <li id="tab_second">
+        <a href="#">Second Link</a>
+    </li>
+    <li id="tab_third" class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Some Dropdown Menu
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Some Link</a></li>
+            <li><a href="#">Another Link</a></li>
+        </ul>
+    </li>
+</ul>
+{% endblock %}
+{% block body %}body{% endblock %}
