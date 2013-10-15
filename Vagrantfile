@@ -15,7 +15,6 @@ Vagrant::Config.run do |config|
     chef.add_recipe 'nginx'
     chef.add_recipe 'git'
     chef.add_recipe 'postgresql::server'
-    chef.add_recipe 'apache2'
     chef.add_recipe 'vim'
     chef.add_recipe 'tmux'
     chef.add_recipe 'python'
@@ -63,26 +62,6 @@ Vagrant::Config.run do |config|
         :password => {
           :postgres => "password"
         }
-      },
-      :apache     => {
-        :default_site_enabled => "true",
-        :dir                  => "/etc/apache2",
-        :log_dir              => "/var/log/apache2",
-        :error_log            => "error.log",
-        :user                 => "www-data",
-        :group                => "www-data",
-        :binary               => "/usr/sbin/apache2",
-        :cache_dir            => "/var/cache/apache2",
-        :pid_file             => "/var/run/apache2.pid",
-        :lib_dir              => "/usr/lib/apache2",
-        :listen_ports         => [
-          "80"
-        ],
-        :contact              => "ops@example.com",
-        :timeout              => "300",
-        :keepalive            => "On",
-        :keepaliverequests    => "100",
-        :keepalivetimeout     => "5"
       }
     }
   end
