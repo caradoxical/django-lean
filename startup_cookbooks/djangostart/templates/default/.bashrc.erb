@@ -109,6 +109,6 @@ fi
 cd /vagrant
 sudo pip install -r requirements/local.txt
 cd {{project_name}}
-python manage.py syncdb --noinput
+python manage.py syncdb 
 python manage.py migrate
 sudo python manage.py runserver 0.0.0.0:8000
