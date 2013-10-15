@@ -188,6 +188,7 @@ DJANGO_APPS = (
     # 'django.contrib.humanize',
 
     # Admin panel and documentation:
+    'django_admin_bootstrapped', 
     'django.contrib.admin',
     # 'django.contrib.admindocs',
 )
@@ -195,6 +196,7 @@ DJANGO_APPS = (
 THIRD_PARTY_APPS = (
     # Database migration helpers:
     'south',
+    'bootstrap_toolkit',
 )
 
 # Apps specific for this project go here.

@@ -5,3 +5,5 @@ django-model-utils==1.4.0
 logutils==0.3.3
 South==0.8.1
 psycopg2==2.5.1
+django-bootstrap-toolkit==2.15.0
+django-admin-bootstrapped==0.4.3
