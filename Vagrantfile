@@ -11,7 +11,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 8000, 8001
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["cookbooks"]
+    chef.cookbooks_path = ["cookbooks", "startup_cookbooks"]
     chef.add_recipe :apt
     chef.add_recipe 'nginx'
     chef.add_recipe 'git'
@@ -19,6 +19,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe 'vim'
     chef.add_recipe 'tmux'
     chef.add_recipe 'python'
+    chef.add_recipe 'djangostart'
     chef.json = {
       :nginx      => {
         :dir                => "/etc/nginx",
