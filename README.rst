@@ -16,8 +16,6 @@ To install Django in the new virtual environment, run the following command::
     $ librarian-chef install
     $ vagrant up
     $ vagrant ssh
-    $ cd /vagrant
-    $ pip install -r requirements/local.txt
 
 Acknowledgements
 ================
